@@ -13,7 +13,7 @@ const featuredProducts = [
     id: '1',
     title: '프리미엄 종합 비타민 미네랄',
     price: 35000,
-    image: 'https://images.unsplash.com/photo-1584362917165-526a968579e8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80',
+    image: '/images/product1.jpg',
     category: '비타민/미네랄',
     isBestSeller: true,
   },
@@ -22,7 +22,7 @@ const featuredProducts = [
     title: '고함량 오메가3 1100',
     price: 48000,
     salePrice: 39800,
-    image: 'https://images.unsplash.com/photo-1584308074727-e93b292c08b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80',
+    image: '/images/product2.jpg',
     category: '오메가/루테인',
     isOnSale: true,
   },
@@ -30,28 +30,28 @@ const featuredProducts = [
     id: '3',
     title: '프로바이오틱스 생유산균',
     price: 32000,
-    image: 'https://images.unsplash.com/photo-1550572017-edd951aa8f72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80',
+    image: '/images/product3.jpg',
     category: '프로바이오틱스',
   },
   {
     id: '4',
     title: '프리미엄 루테인 지아잔틴',
     price: 29000,
-    image: 'https://images.unsplash.com/photo-1567861911437-538298e4e620?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80',
+    image: '/images/product4.jpg',
     category: '눈 건강',
   },
   {
     id: '5',
     title: '칼슘 마그네슘 비타민D',
     price: 27000,
-    image: 'https://images.unsplash.com/photo-1585435557885-7eb2eaee1c3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80',
+    image: '/images/product5.jpg',
     category: '뼈 건강',
   },
   {
     id: '6',
     title: '관절 건강 콘드로이친',
     price: 45000,
-    image: 'https://images.unsplash.com/photo-1589758764516-dbbdc592807e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80',
+    image: '/images/product6.jpg',
     category: '관절/연골',
     isNew: true,
   },
@@ -59,14 +59,14 @@ const featuredProducts = [
     id: '7',
     title: '유기농 스피루리나',
     price: 38000,
-    image: 'https://images.unsplash.com/photo-1577969092930-eae85bf51de0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80',
+    image: '/images/product7.jpg',
     category: '슈퍼푸드',
   },
   {
     id: '8',
     title: '비타민C 1000',
     price: 22000,
-    image: 'https://images.unsplash.com/photo-1626903254223-f95bf749c856?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80',
+    image: '/images/product8.jpg',
     category: '면역 건강',
     isOnSale: true,
     salePrice: 18000,
@@ -111,15 +111,15 @@ export default function Home() {
               </div>
             </div>
             <div className="w-full md:w-1/2 relative h-64 md:h-96">
-              {/* 히어로 이미지는 실제 배포 시 public 폴더에 저장하고 사용하는 것이 좋습니다 */}
-              <Image
-                src="https://images.unsplash.com/photo-1508894760958-7c6d37f94d86?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-                alt="건강기능식품"
-                fill
-                priority
-                sizes="(max-width: 768px) 100vw, 50vw"
-                className="object-cover rounded-lg shadow-xl"
-              />
+              <div className="relative h-full w-full">
+                <Image 
+                  src="/images/hero.jpg"
+                  alt="한결약국 건강기능식품"
+                  fill
+                  className="object-cover rounded-lg"
+                  priority
+                />
+              </div>
             </div>
           </div>
         </div>
