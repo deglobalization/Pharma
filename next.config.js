@@ -6,8 +6,8 @@ const nextConfig = {
     unoptimized: true,
   },
   output: 'export',
-  basePath: '/pharma-website',
-  assetPrefix: '/pharma-website',
+  basePath: '/Pharma',
+  assetPrefix: '/Pharma',
 }
 
 module.exports = nextConfig 
