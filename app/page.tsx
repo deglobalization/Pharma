@@ -13,7 +13,7 @@ const featuredProducts = [
     id: '1',
     title: '프리미엄 종합 비타민 미네랄',
     price: 35000,
-    image: '/images/product1.jpg',
+    image: '/Pharma/images/product1.jpg',
     category: '비타민/미네랄',
     isBestSeller: true,
   },
@@ -22,7 +22,7 @@ const featuredProducts = [
     title: '고함량 오메가3 1100',
     price: 48000,
     salePrice: 39800,
-    image: '/images/product2.jpg',
+    image: '/Pharma/images/product2.jpg',
     category: '오메가/루테인',
     isOnSale: true,
   },
@@ -30,28 +30,28 @@ const featuredProducts = [
     id: '3',
     title: '프로바이오틱스 생유산균',
     price: 32000,
-    image: '/images/product3.jpg',
+    image: '/Pharma/images/product3.jpg',
     category: '프로바이오틱스',
   },
   {
     id: '4',
     title: '프리미엄 루테인 지아잔틴',
     price: 29000,
-    image: '/images/product4.jpg',
+    image: '/Pharma/images/product4.jpg',
     category: '눈 건강',
   },
   {
     id: '5',
     title: '칼슘 마그네슘 비타민D',
     price: 27000,
-    image: '/images/product5.jpg',
+    image: '/Pharma/images/product5.jpg',
     category: '뼈 건강',
   },
   {
     id: '6',
     title: '관절 건강 콘드로이친',
     price: 45000,
-    image: '/images/product6.jpg',
+    image: '/Pharma/images/product6.jpg',
     category: '관절/연골',
     isNew: true,
   },
@@ -59,14 +59,14 @@ const featuredProducts = [
     id: '7',
     title: '유기농 스피루리나',
     price: 38000,
-    image: '/images/product7.jpg',
+    image: '/Pharma/images/product7.jpg',
     category: '슈퍼푸드',
   },
   {
     id: '8',
     title: '비타민C 1000',
     price: 22000,
-    image: '/images/product8.jpg',
+    image: '/Pharma/images/product8.jpg',
     category: '면역 건강',
     isOnSale: true,
     salePrice: 18000,
@@ -113,7 +113,7 @@ export default function Home() {
             <div className="w-full md:w-1/2 relative h-64 md:h-96">
               <div className="relative h-full w-full">
                 <Image 
-                  src="/images/hero.jpg"
+                  src="/Pharma/images/hero.jpg"
                   alt="한결약국 건강기능식품"
                   fill
                   className="object-cover rounded-lg"
